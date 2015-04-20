@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'home/layout1'
+  
 
-  get 'home/layout2'
-
+root 'home#layout1'
+  get '/layout1' => 'home#layout1'
+  get '/layout2' => 'home#layout2'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

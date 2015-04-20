@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Layouts</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+<header>
+
+
+  <a href="/layout1">layout 1</a>
+  <a href="/layout2">layout 2</a>
+</header>
+
+
+  <%= yield %>
+</div>
+<footer>
+
+</footer>
+
+</body>
+</html>
